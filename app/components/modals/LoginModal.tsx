@@ -47,7 +47,7 @@ const LoginModal = () => {
                 toast.success("Successfully logged in");
                 router.refresh();
                 loginModal.onClose();
-                router.push("/properties");
+                router.push("/dashboard");
             }
 
             if (cb?.error) {
