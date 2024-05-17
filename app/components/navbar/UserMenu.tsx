@@ -40,13 +40,13 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             <div className="flex flex-row items-center">
                 {/* <div
                     onClick={onRent}
-                    className="hidden px-4 py-3 text-sm font-bold transition rounded-full cursor-pointer  md:block hover:bg-neutral-100 text-neutral-800 whitespace-nowrap"
+                    className="hidden px-4 py-3 text-sm font-bold transition rounded-full cursor-pointer md:block hover:bg-neutral-100 text-neutral-800 whitespace-nowrap"
                 >
                     Airbnb your home
                 </div>
                 <div className="hidden md:block">
                     <div 
-                        className="p-4 mr-2 transition rounded-full cursor-pointer  hover:bg-neutral-100"
+                        className="p-4 mr-2 transition rounded-full cursor-pointer hover:bg-neutral-100"
                     >
                         <FiGlobe size={18} />
                     </div>
@@ -101,13 +101,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                         {currentUser ? (
                             <>
                                 <MenuItem
-                                    onClick={() => router.push("/trips")}
-                                    label="Trips"
-                                    isBold
-                                />
-                                <MenuItem
-                                    onClick={() => router.push("/favorites")}
-                                    label="Favorites"
+                                    onClick={() => router.push("/properties")}
+                                    label="Properties"
                                     isBold
                                 />
                                 <MenuItem
@@ -115,25 +110,14 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                                     label="Reservations"
                                     isBold
                                 />
-                                <MenuItem
-                                    onClick={() => router.push("/properties")}
-                                    label="Properties"
-                                    isBold
-                                />
                                 <div className="my-2 bg-neutral-200 w-full h-[1px]" />
                                 <MenuItem
                                     onClick={rentModal.onOpen}
-                                    label="Airbnb your home"
+                                    label="Add New Property"
                                 />
-                                {/* <MenuItem
-                                    onClick={() => {}}
-                                    label="Account"
-                                /> */}
+
                                 <div className="my-2 bg-neutral-200 w-full h-[1px]" />
-                                {/* <MenuItem
-                                    onClick={() => {}}
-                                    label="Help"
-                                /> */}
+
                                 <MenuItem
                                     onClick={() => signOut()}
                                     label="Log Out"
