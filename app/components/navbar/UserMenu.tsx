@@ -101,6 +101,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                         {currentUser ? (
                             <>
                                 <MenuItem
+                                    onClick={() => router.push("/dashboard")}
+                                    label="Dashboard"
+                                    isBold
+                                />
+                                <MenuItem
                                     onClick={() => router.push("/properties")}
                                     label="Properties"
                                     isBold
@@ -114,6 +119,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                                 <MenuItem
                                     onClick={rentModal.onOpen}
                                     label="Add New Property"
+                                    isBold
                                 />
 
                                 <div className="my-2 bg-neutral-200 w-full h-[1px]" />
