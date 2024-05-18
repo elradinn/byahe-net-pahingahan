@@ -133,7 +133,7 @@ export function Overview({
                                 <TableBody>
                                     {transactions.map((value, index) => {
                                         return (
-                                            <TableRow>
+                                            <TableRow key={index}>
                                                 <TableCell>
                                                     <div className="font-medium">
                                                         {value.user.name}
