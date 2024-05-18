@@ -7,6 +7,7 @@ import getListingCount from "../actions/getListingCount";
 import getTotalReservations from "../actions/getTotalReservations";
 import getTodayTotalReservations from "../actions/getTodayTotalReservations";
 import getTotalRevenue from "../actions/getTotalRevenue";
+import getReservations from "../actions/getReservations";
 
 const DashboardPage = async () => {
     const currentUser = await getCurrentUser();
@@ -27,6 +28,7 @@ const DashboardPage = async () => {
         authorId: currentUser.id,
     });
     const totalRevenue = await getTotalRevenue({ authorId: currentUser.id });
+    const reservations = await getReservations({ authorId: currentUser.id });
 
     return (
         <Overview
@@ -34,6 +36,7 @@ const DashboardPage = async () => {
             totalReservations={totalReservations}
             bookingsToday={bookingsToday}
             totalRevenue={totalRevenue}
+            transactions={reservations}
         />
     );
 };
