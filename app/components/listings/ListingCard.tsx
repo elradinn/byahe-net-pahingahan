@@ -81,12 +81,12 @@ const ListingCard: React.FC<ListingCardProps> = ({
                         src={data.imageSrc}
                         className="object-cover w-full h-full transition group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4">
+                    {/* <div className="absolute top-4 right-4">
                         <HeartButton
                             listingId={data.id}
                             currentUser={currentUser}
                         />
-                    </div>
+                    </div> */}
                     {showAvatar && (
                         <div className="absolute bottom-4 left-4 bg-gray-100 px-3 py-4 rounded-tl-[2px] rounded-bl-[2px] border-t-white rounded-tr-lg rounded-br-lg">
                             <div className="absolute top-0 w-[1px] h-full bg-gray-400 left-1"></div>
