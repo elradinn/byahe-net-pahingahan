@@ -57,52 +57,42 @@ export function Overview() {
                             <DollarSign className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">$45,231.89</div>
-                            <p className="text-xs text-muted-foreground">
-                                +20.1% from last month
-                            </p>
+                            <div className="text-2xl font-bold">
+                                PHP 45,231.89
+                            </div>
                         </CardContent>
                     </Card>
                     <Card x-chunk="dashboard-01-chunk-1">
                         <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
                             <CardTitle className="text-sm font-medium">
-                                Subscriptions
+                                Bookings Today
                             </CardTitle>
                             <Users className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">+2350</div>
-                            <p className="text-xs text-muted-foreground">
-                                +180.1% from last month
-                            </p>
+                            <div className="text-2xl font-bold">6</div>
                         </CardContent>
                     </Card>
                     <Card x-chunk="dashboard-01-chunk-2">
                         <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
                             <CardTitle className="text-sm font-medium">
-                                Sales
+                                Total Bookings
                             </CardTitle>
                             <CreditCard className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">+12,234</div>
-                            <p className="text-xs text-muted-foreground">
-                                +19% from last month
-                            </p>
+                            <div className="text-2xl font-bold">157</div>
                         </CardContent>
                     </Card>
                     <Card x-chunk="dashboard-01-chunk-3">
                         <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
                             <CardTitle className="text-sm font-medium">
-                                Active Now
+                                Total Properties
                             </CardTitle>
                             <Activity className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">+573</div>
-                            <p className="text-xs text-muted-foreground">
-                                +201 since last hour
-                            </p>
+                            <div className="text-2xl font-bold">16</div>
                         </CardContent>
                     </Card>
                 </div>
@@ -115,7 +105,7 @@ export function Overview() {
                             <div className="grid gap-2">
                                 <CardTitle>Transactions</CardTitle>
                                 <CardDescription>
-                                    Recent transactions from your store.
+                                    Recent transactions from your properties.
                                 </CardDescription>
                             </div>
                             <Button asChild size="sm" className="gap-1 ml-auto">
