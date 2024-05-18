@@ -28,9 +28,17 @@ import {
 
 interface Props {
     listingCount: number;
+    totalReservations: number;
+    bookingsToday: number;
+    totalRevenue: number;
 }
 
-export function Overview({ listingCount }: Props) {
+export function Overview({
+    listingCount,
+    totalReservations,
+    bookingsToday,
+    totalRevenue,
+}: Props) {
     return (
         <div className="flex flex-col min-h-screen px-4 mx-auto xl:px-20 md:px-10 sm:px-2">
             <main className="flex flex-col flex-1 gap-4 md:gap-8 md:p-8">
@@ -44,7 +52,7 @@ export function Overview({ listingCount }: Props) {
                         </CardHeader>
                         <CardContent>
                             <div className="text-2xl font-bold">
-                                PHP 45,231.89
+                                {totalRevenue}
                             </div>
                         </CardContent>
                     </Card>
@@ -56,7 +64,9 @@ export function Overview({ listingCount }: Props) {
                             <Users className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">6</div>
+                            <div className="text-2xl font-bold">
+                                {bookingsToday}
+                            </div>
                         </CardContent>
                     </Card>
                     <Card x-chunk="dashboard-01-chunk-2">
@@ -67,7 +77,9 @@ export function Overview({ listingCount }: Props) {
                             <CreditCard className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">157</div>
+                            <div className="text-2xl font-bold">
+                                {totalReservations}
+                            </div>
                         </CardContent>
                     </Card>
                     <Card x-chunk="dashboard-01-chunk-3">
