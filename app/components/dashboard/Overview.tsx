@@ -2,20 +2,11 @@ import Link from "next/link";
 import {
     Activity,
     ArrowUpRight,
-    CircleUser,
     CreditCard,
     DollarSign,
-    Menu,
-    Package2,
-    Search,
     Users,
 } from "lucide-react";
 
-import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
-} from "@/app/components/ui/avatar";
 import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
 import {
@@ -25,16 +16,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/app/components/ui/card";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/app/components/ui/dropdown-menu";
-import { Input } from "@/app/components/ui/input";
-import { Sheet, SheetContent, SheetTrigger } from "@/app/components/ui/sheet";
+
 import {
     Table,
     TableBody,
@@ -44,7 +26,11 @@ import {
     TableRow,
 } from "@/app/components/ui/table";
 
-export function Overview() {
+interface Props {
+    listingCount: number;
+}
+
+export function Overview({ listingCount }: Props) {
     return (
         <div className="flex flex-col min-h-screen px-4 mx-auto xl:px-20 md:px-10 sm:px-2">
             <main className="flex flex-col flex-1 gap-4 md:gap-8 md:p-8">
@@ -92,7 +78,9 @@ export function Overview() {
                             <Activity className="w-4 h-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">16</div>
+                            <div className="text-2xl font-bold">
+                                {listingCount}
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
