@@ -85,14 +85,18 @@ const Landing = () => {
                             </p>
 
                             <h1 className="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">
-                                Propel Your Business to New Heights
+                                Propel Your Property Business to New Heights
                             </h1>
 
                             <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
-                                This is a section of some simple filler text,
-                                also known as placeholder text. It shares some
-                                characteristics of a real written text but is
-                                random.
+                                With features like tenant tracking to keep all
+                                tenant information organized, maintenance
+                                scheduling to effortlessly manage repairs, and
+                                financial management to handle rent, expenses,
+                                and reports all in one place, you can streamline
+                                your operations and boost tenant satisfaction.
+                                Perfect for any property type, our system helps
+                                you save time and optimize performance.
                             </p>
 
                             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
@@ -114,7 +118,7 @@ const Landing = () => {
 
                         <div className="h-48 overflow-hidden bg-gray-100 rounded-lg shadow-lg lg:h-auto xl:w-5/12">
                             <img
-                                src="https://images.unsplash.com/photo-1618004912476-29818d81ae2e?auto=format&q=75&fit=crop&w=1000"
+                                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 loading="lazy"
                                 alt="Photo by Fakurian Design"
                                 className="object-cover object-center w-full h-full"
