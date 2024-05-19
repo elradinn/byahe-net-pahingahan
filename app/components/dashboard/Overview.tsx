@@ -112,12 +112,12 @@ export function Overview({
                                     Recent transactions from your properties.
                                 </CardDescription>
                             </div>
-                            <Button asChild size="sm" className="gap-1 ml-auto">
+                            {/* <Button asChild size="sm" className="gap-1 ml-auto">
                                 <Link href="#">
                                     View All
                                     <ArrowUpRight className="w-4 h-4" />
                                 </Link>
-                            </Button>
+                            </Button> */}
                         </CardHeader>
                         <CardContent>
                             <Table>

@@ -42,7 +42,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                     onClick={onRent}
                     className="hidden px-4 py-3 text-sm font-bold transition rounded-full cursor-pointer md:block hover:bg-neutral-100 text-neutral-800 whitespace-nowrap"
                 >
-                    Airbnb your home
+                    Byahe.net your home
                 </div>
                 <div className="hidden md:block">
                     <div 
@@ -143,7 +143,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                                 <div className="my-2 bg-neutral-200 w-full h-[1px]" />
                                 <MenuItem
                                     onClick={onRent}
-                                    label="Airbnb your home"
+                                    label="Add Your Property"
                                 />
                                 {/* <MenuItem
                                     onClick={() => {}}

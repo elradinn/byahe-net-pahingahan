@@ -2,9 +2,9 @@ import React from "react";
 
 const Landing = () => {
     return (
-        <>
+        <div className="px-4 mx-auto xl:px-20 md:px-10 sm:px-2">
             <div className="pb-6 bg-white sm:pb-8 lg:pb-12">
-                <div className="px-4 mx-auto max-w-screen-2xl md:px-8">
+                <div>
                     {/* <header className="flex items-center justify-between py-4 mb-8 md:mb-12 md:py-8 xl:mb-16">
                         <a
                             href="/"
@@ -85,7 +85,7 @@ const Landing = () => {
                             </p>
 
                             <h1 className="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">
-                                Revolutionary way to build the web
+                                Propel Your Business to New Heights
                             </h1>
 
                             <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
@@ -1374,7 +1374,7 @@ const Landing = () => {
                     </div>
                 </footer>
             </div> */}
-        </>
+        </div>
     );
 };
 

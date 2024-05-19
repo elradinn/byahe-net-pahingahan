@@ -36,7 +36,7 @@ const HeartButton: React.FC<HeartButtonProps> = ({
                 size={25}
                 className={
                     hasFavorited
-                        ? "fill-rose-500 -top-[2px] -right-[2px]"
+                        ? "fill-indigo-500 -top-[2px] -right-[2px]"
                         : "fill-neutral-500/70 -top-[2px] -right-[2px]"
                 }
             />

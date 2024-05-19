@@ -13,8 +13,8 @@ import getCurrentUser from "./actions/getCurrentUser";
 import SearchModal from "./components/modals/SearchModal";
 
 export const metadata = {
-    title: "Vacation Homes & Condo Rentals - Airbnb - Airbnb",
-    description: "My Airbnb Clone!",
+    title: "Vacation Homes & Condo Rentals - Byahe.net - Byahe.net",
+    description: "My Byahe.net Clone!",
 };
 
 const font = Nunito({
